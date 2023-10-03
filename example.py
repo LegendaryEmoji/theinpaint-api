@@ -77,6 +77,7 @@ mask_response = requests.post(referer_url + "process", data=f"mask={urllib.parse
     "Accept": "*/*",
     "Cookie": Cookie,
     "Origin": "https://theinpaint.com",
+    "Referer": referer_url,
     "Content-Type": "application/x-www-form-urlencoded",
     "User-Agent": UserAgent
 })
