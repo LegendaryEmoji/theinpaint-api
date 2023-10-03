@@ -36,6 +36,7 @@ print({"action": "upload", "status_code": upload_response.status_code})
 info_response = requests.get("https://theinpaint.com/user/info/", headers={
     "Accept": "*/*",
     "Cookie": Cookie,
+    "Origin": "https://theinpaint.com",
     "Referer": "https://theinpaint.com/",
     "User-Agent": UserAgent
 })
